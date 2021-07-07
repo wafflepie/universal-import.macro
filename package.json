@@ -1,5 +1,6 @@
 {
   "name": "universal-import.macro",
+  "description": "Babel macro for automatic conversion of import() call expressions into require() based on a supplied code string.",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Václav Jančařík <vaclav.janc@gmail.com>",

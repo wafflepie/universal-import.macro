@@ -21,17 +21,14 @@ import(`./assets/${name}.svg`);
 // After
 import universalImport from "universal-import.macro";
 
-universalImport(
-  `./assets/${name}.svg`,
-  `Boolean(process.env.NO_DYNAMIC_IMPORTS)`
-);
+universalImport(`./assets/${name}.svg`, `!!process.env.NO_DYNAMIC_IMPORTS`);
 ```
 
-Replace `Boolean(process.env.NO_DYNAMIC_IMPORTS)` with some other code string which evaluates into a boolean at build time.
+Replace `!!process.env.NO_DYNAMIC_IMPORTS` with some other code string which evaluates into a boolean at build-time.
 
 ## Tests?
 
-Yes, some.
+[Yes, some](./src/macro.test.js).
 
 ## License
 
