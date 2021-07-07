@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unknown plugin 1. unknown plugin: 1. unknown plugin 1`] = `
+
+import universalImport from "./macro"
+
+universalImport("./foo", "false")
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import("./foo");
+
+
+`;
+
+exports[`unknown plugin 2. unknown plugin: 2. unknown plugin 1`] = `
+
+import universalImport from "./macro"
+
+universalImport("./foo", "true")
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+require("./foo");
+
+
+`;
+
+exports[`unknown plugin 3. unknown plugin: 3. unknown plugin 1`] = `
+
+import universalImport from "./macro"
+
+universalImport("./foo", "process.env.NODE_ENV === 'test'")
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+require("./foo");
+
+
+`;
