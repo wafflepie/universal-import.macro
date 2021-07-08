@@ -2,7 +2,7 @@
 
 [![Babel Macro](https://img.shields.io/badge/babel--macro-%F0%9F%8E%A3-f5da55.svg?style=flat-square)](https://github.com/kentcdodds/babel-plugin-macros)
 
-Babel macro for automatic conversion of `import()` call expressions into `require()` based on a supplied code string.
+Babel macro for transformation of dynamic imports into synchronous requires based on a supplied code string.
 
 ## Why?
 
